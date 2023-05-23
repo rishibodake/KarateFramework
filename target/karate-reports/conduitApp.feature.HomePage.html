@@ -39,8 +39,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -50,7 +50,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2023-05-23 01:37:15 PM</div>
+    <div>2023-05-23 02:01:56 PM</div>
   </div>
 </div>
 
@@ -58,7 +58,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div class="nav-item passed">
             <a href="#[1:6]"><span>[1:6]</span> <span>Get all tags</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[2:15]"><span>[2:15]</span> <span>Get all articles on homepage</span></a>
           </div>
         </div>
@@ -85,7 +85,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1049</span>
+              <span>ms:</span>&nbsp;<span>1458</span>
             </div>
           </div>
           <div class="step-row">
@@ -108,6 +108,184 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url apiURL</span>
       </div>
     </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">14:01:42.379 &lt;&lt; lock released, cached callSingle: classpath:helper/CreateToken.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helper.CreateToken</div>
+      </div>
+      <div class="time-cell passed">1477</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.4">14:01:40.846 karate.env system property was: null 
+14:01:40.857 &gt;&gt; lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: {&quot;email&quot;: #(userName),&quot;password&quot;: #(userPasskey)}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">40</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1430</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.7">14:01:41.419 request:
+1 &gt; POST https://api.realworld.io/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 64
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate8108@karate.com&quot;,&quot;password&quot;:&quot;karate12&quot;}}
+
+14:01:42.371 response time in milliseconds: 949
+1 &lt; 200
+1 &lt; Date: Tue, 23 May 2023 08:31:42 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;15f-bx8DeXNjFc92l3LSFsAe1M0zPHY&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=4jbBw7bEKGYdWGht3jMwh4kHyGEMwIw%2Fu2Ga2Pzre4u2hBZ9ASbTW4VquQ1jfPuPEXy5PBYPHSVYhq3RDCe306MpfSjyinr%2FLYfesJgn0ZBOSXluYwIpDgH14uQIto9THDpZ&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7cbbf1ad1c2b856c-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate8108@karate.com&quot;,&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzMDcwMiwiZXhwIjoxNjkwMDE0NzAyfQ.eR4V2G0ENttdywLjvKVKK3rrlObWmpnCtN6uvJxwqPc&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
     <div class="time-cell passed">0</div>
   </div>
 
@@ -117,10 +295,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">13:37:06.939 karate.env system property was: null 
-</div>   
+     
 
   
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
 
 </div>
 </div>
@@ -137,7 +347,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;tags&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -165,7 +375,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">1035</div>
+    <div class="time-cell passed">1439</div>
   </div>
 
    
@@ -174,18 +384,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">13:37:06.947 request:
+  <div class="preformatted" data-parent="0.8">14:01:42.394 request:
 1 &gt; GET https://api.realworld.io/api/tags
-1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgyOTIyNiwiZXhwIjoxNjkwMDEzMjI2fQ.TLUPPVachTzRjkCco5Q2Dp90kuB5kbrzJ4qAPxAeZzA
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzMDcwMiwiZXhwIjoxNjkwMDE0NzAyfQ.eR4V2G0ENttdywLjvKVKK3rrlObWmpnCtN6uvJxwqPc
 1 &gt; Host: api.realworld.io
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-13:37:07.979 response time in milliseconds: 1031
+14:01:43.828 response time in milliseconds: 1434
 1 &lt; 200
-1 &lt; Date: Tue, 23 May 2023 08:07:07 GMT
+1 &lt; Date: Tue, 23 May 2023 08:31:43 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -194,10 +404,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Etag: W/&quot;76-QAIKJ+jzFJHRIavFYxLRj4MZAjA&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=3bElO6UmJLLCh7HtoeMMtulXdpb3p1mmI%2FKpjLQYC6tFlha505pZyfYtFmfTQZH0vho6zN1UPAcVNbP8%2F21j5qyoreUAiq9LC8FzPTZu2uIfguYkq0LJGj8RrQNPAhCB3bWo&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=3EwDxsVhTEcpmY%2BN%2BnA8iAoYUhtfe%2Fs7s0jG4YnuCFarBEYwPyB4loKr2ChLXTI5o8HnBrjbMOSwQKrdO8Gw9E63mp%2BQr0IRKb6dnZ9J3rARJnFdlSWHTuRV7aHxF1EDZnqP&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7cbbcdacde6a6ec4-BOM
+1 &lt; CF-RAY: 7cbbf1b3ba2bf34b-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
 {&quot;tags&quot;:[&quot;implementations&quot;,&quot;welcome&quot;,&quot;introduction&quot;,&quot;codebaseShow&quot;,&quot;ipsum&quot;,&quot;qui&quot;,&quot;et&quot;,&quot;quia&quot;,&quot;cupiditate&quot;,&quot;deserunt&quot;]}
 
@@ -248,7 +458,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.tags contains [&#39;welcome&#39;,&#39;introduction&#39;]</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -276,7 +486,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.tags !contains &#39;truck&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -360,8 +570,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1437</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1875</span>
             </div>
           </div>
           <div class="step-row">
@@ -393,7 +603,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">13:37:06.966 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">14:01:42.417 karate.env system property was: null 
 </div>   
 
   
@@ -413,7 +623,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>params {limit:10, offset:0}</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -469,7 +679,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">1430</div>
+    <div class="time-cell passed">1865</div>
   </div>
 
    
@@ -478,18 +688,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.18">13:37:06.985 request:
+  <div class="preformatted" data-parent="0.18">14:01:42.434 request:
 1 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
-1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgyOTIyNiwiZXhwIjoxNjkwMDEzMjI2fQ.TLUPPVachTzRjkCco5Q2Dp90kuB5kbrzJ4qAPxAeZzA
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzMDcwMiwiZXhwIjoxNjkwMDE0NzAyfQ.eR4V2G0ENttdywLjvKVKK3rrlObWmpnCtN6uvJxwqPc
 1 &gt; Host: api.realworld.io
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-13:37:08.411 response time in milliseconds: 1425
+14:01:44.292 response time in milliseconds: 1857
 1 &lt; 200
-1 &lt; Date: Tue, 23 May 2023 08:07:08 GMT
+1 &lt; Date: Tue, 23 May 2023 08:31:43 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -498,10 +708,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Etag: W/&quot;df8-T783/SJxFpT83QJyovfUlcUg6uc&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=m91KxD7kC0Z1Km78e363y60YL93dxenrO1eWpetBdWH1QIoaC%2BvGB%2Fx1%2Bk%2FhJpM2O9%2BmS9x3pO13qR3EVWywQzxDv93FNiaW42wfoqDrwUAlefAtth2rj7jogg0N6%2B%2B%2FHDlB&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=BBGlsiyG5HjKTGd1ijVwFqZkQ0EXtRMPv47OaEHl4Ipn8TnJWbYrBfXqi2UKvpQ%2F1mh8zlR20%2FodoClSahiPRiOKzOrw4MAEzQC5W1lFTw98r84mfGHd9xRundf8XC%2FNxId1&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7cbbcdae88b4f37b-BOM
+1 &lt; CF-RAY: 7cbbf1b43c6d6ecb-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
 {&quot;articles&quot;:[{&quot;slug&quot;:&quot;Updated-title-one1-179370&quot;,&quot;title&quot;:&quot;Updated title one1&quot;,&quot;description&quot;:&quot;Article&quot;,&quot;body&quot;:&quot;Hello There&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-23T07:11:37.358Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-23T07:11:37.358Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Updated-title-Four11-179370&quot;,&quot;title&quot;:&quot;Updated title Four11&quot;,&quot;description&quot;:&quot;Article&quot;,&quot;body&quot;:&quot;Hello There&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-18T05:53:40.956Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-18T05:53:40.956Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Updated-title-Four1-179370&quot;,&quot;title&quot;:&quot;Updated title Four1&quot;,&quot;description&quot;:&quot;Article&quot;,&quot;body&quot;:&quot;Hello There&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-18T05:53:13.767Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-18T05:53:13.767Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Updated-title-Four-179370&quot;,&quot;title&quot;:&quot;Updated title Four&quot;,&quot;description&quot;:&quot;Article&quot;,&quot;body&quot;:&quot;Hello There&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-18T05:52:10.512Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-18T05:52:10.512Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Updated-title-Three-179370&quot;,&quot;title&quot;:&quot;Updated title Three&quot;,&quot;description&quot;:&quot;Article&quot;,&quot;body&quot;:&quot;Hello There&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-18T05:45:52.793Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-18T05:45:52.793Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Updated-title-Two-179370&quot;,&quot;title&quot;:&quot;Updated title Two&quot;,&quot;description&quot;:&quot;Article&quot;,&quot;body&quot;:&quot;Hello There&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-18T05:45:22.878Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-18T05:45:22.878Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Updated-title-179370&quot;,&quot;title&quot;:&quot;Updated title&quot;,&quot;description&quot;:&quot;Article&quot;,&quot;body&quot;:&quot;Hello There&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-17T11:20:33.502Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-17T11:20:33.502Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;NewCheck-179370&quot;,&quot;title&quot;:&quot;NewCheck&quot;,&quot;description&quot;:&quot;Article&quot;,&quot;body&quot;:&quot;Hello There&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-17T11:10:04.196Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-17T11:10:04.196Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;New-179370&quot;,&quot;title&quot;:&quot;New&quot;,&quot;description&quot;:&quot;Article&quot;,&quot;body&quot;:&quot;Hello There&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-17T09:43:12.450Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-17T09:43:12.450Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Check-179370&quot;,&quot;title&quot;:&quot;Check&quot;,&quot;description&quot;:&quot;wqwq&quot;,&quot;body&quot;:&quot;qwqwqw&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-05-17T09:37:33.348Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-17T09:37:33.348Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;karate8108&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:207}
 
@@ -552,7 +762,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.articles == &#39;#[10]&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -562,42 +772,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
      
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref failed">21</div>
-      
-      <div class="step-cell failed">
-        <span>And</span>&nbsp;<span>match response.articlesCount == 197</span>
-      </div>
-    </div>
-    <div class="time-cell failed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.21">13:37:08.417 classpath:conduitApp/feature/HomePage.feature:21
-And match response.articlesCount == 197
-match failed: EQUALS
-  $ | not equal (NUMBER:NUMBER)
-  207
-  197
-
-classpath:conduitApp/feature/HomePage.feature:21
-</div>   
 
   
 
