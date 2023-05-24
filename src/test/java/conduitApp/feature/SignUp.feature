@@ -4,7 +4,7 @@ Feature:Sign up new user
 Background: Prconditions
     * def dataGenerator = Java.type('helper.DataGenerator')
     Given url apiURL
-@dataGen
+
 Scenario: Sign up
     * def randomEmail = dataGenerator.getRandomEmail()
     * def randomUsername = dataGenerator.getRandomUserName()
@@ -30,5 +30,33 @@ Scenario: Sign up
         "image": "#string",
         "token": "#string"
     }
-    """
+"""
 
+@dataGen
+Scenario Outline: Negative scenario for invalid username   
+    * def randomEmail = dataGenerator.getRandomEmail()
+    * def randomUsername = dataGenerator.getRandomUserName()
+    When path 'users'
+    And request 
+    """
+{
+    "user": {
+        "email": "<email>",
+        "password": "<password>",
+        "username": "<username>"
+    }
+}  
+"""  
+    When method Post
+    Then status 422
+    And match response == <errorResponse>
+
+    Examples:
+    |email         |username           |password  |                 errorResponse                    |
+    |#(randomEmail)| karateUser123     |karate123 |{"errors":{"username":["has already been taken"]}}|
+    |me12@test.com | #(randomUsername) |karate123 |{"errors":{"email":["has already been taken"]}}   |
+    |me12@test.com |                   |karate123 |{"errors":{"username":["can't be blank"]}}        |
+    |              | karateUser123     |karate123 |{"errors":{"email":["can't be blank"]}}           |
+    |me12@test.com | #(randomUsername) |karate123 |{"errors":{"email":["has already been taken"]}}   |
+    |#(randomEmail)| #(randomUsername) |          |{"errors":{"password":["can't be blank"]}}        |
+    
