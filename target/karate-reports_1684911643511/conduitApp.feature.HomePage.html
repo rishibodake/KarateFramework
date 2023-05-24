@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("c65acf2d-ce3d-4464-8b98-58d8041c52c5",{name:"hbodake"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>conduitApp.feature.HomePage</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-05-24 12:30:17 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>Get all tags</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:16]"><span>[2:16]</span> <span>Get first 10 articles on homepage</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">conduitApp/feature/HomePage.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Tests for home page</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">Get all tags</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:5]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:5]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:30:17.956 callSingle() will cache an exception
+12:30:17.956 &lt;&lt; lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:30:17.956 callSingle() cached result is an exception
+12:30:17.968 classpath:conduitApp/feature/HomePage.feature:4
+Given url apiURL
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:5
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helper.CreateToken</div>
+      </div>
+      <div class="time-cell passed">536</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.4">12:30:17.356 karate.env system property was: null 
+12:30:17.366 &gt;&gt; lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: {&quot;email&quot;: #(userName),&quot;password&quot;: #(userPasskey)}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">509</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.7">12:30:17.932 request:
+1 &gt; POST https://api.realworld.io/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 64
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;karate8108@karate.com&quot;,&quot;password&quot;:&quot;karate12&quot;}}
+
+12:30:17.954 java.net.UnknownHostException: No such host is known (api.realworld.io), http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+12:30:17.955 classpath:helper/CreateToken.feature:7
+When method post
+http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def authToken = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref failed">6</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;tags&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">12:30:17.968 classpath:conduitApp/feature/HomePage.feature:6
+Given path &#39;tags&#39;
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:5
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">12:30:17.968 classpath:conduitApp/feature/HomePage.feature:7
+When method Get
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:5
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">12:30:17.968 classpath:conduitApp/feature/HomePage.feature:8
+Then status 200
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:5
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.tags contains [&#39;welcome&#39;,&#39;introduction&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">12:30:17.968 classpath:conduitApp/feature/HomePage.feature:9
+And match response.tags contains [&#39;welcome&#39;,&#39;introduction&#39;]
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:5
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.tags contains any [&#39;introduction&#39;,&#39;hi&#39;,&#39;checking&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">12:30:17.969 classpath:conduitApp/feature/HomePage.feature:10
+And match response.tags contains any [&#39;introduction&#39;,&#39;hi&#39;,&#39;checking&#39;]
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:5
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.tags !contains &#39;truck&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">12:30:17.969 classpath:conduitApp/feature/HomePage.feature:11
+And match response.tags !contains &#39;truck&#39;
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:5
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+classpath:conduitApp/feature/HomePage.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.tags == &quot;#array&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">12:30:17.969 classpath:conduitApp/feature/HomePage.feature:12
+And match response.tags == &quot;#array&quot;
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:5
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+classpath:conduitApp/feature/HomePage.feature:11
+classpath:conduitApp/feature/HomePage.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match each response.tags == &quot;#string&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">12:30:17.969 classpath:conduitApp/feature/HomePage.feature:13
+And match each response.tags == &quot;#string&quot;
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:5
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+classpath:conduitApp/feature/HomePage.feature:11
+classpath:conduitApp/feature/HomePage.feature:12
+classpath:conduitApp/feature/HomePage.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getArticle</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:16]</span>
+                <span class="scenario-name">Get first 10 articles on homepage</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:30:17.971 karate.env system property was: null 
+12:30:17.972 callSingle() cached result is an exception
+12:30:17.974 classpath:conduitApp/feature/HomePage.feature:4
+Given url apiURL
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helper/timeValidator.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">12:30:17.974 classpath:conduitApp/feature/HomePage.feature:17
+* def timeValidator = read(&#39;classpath:helper/timeValidator.js&#39;)
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>params {limit:10, offset:0}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">12:30:17.974 classpath:conduitApp/feature/HomePage.feature:19
+Given params {limit:10, offset:0}
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">12:30:17.974 classpath:conduitApp/feature/HomePage.feature:20
+Given path &#39;articles&#39;
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">12:30:17.975 classpath:conduitApp/feature/HomePage.feature:21
+When method Get
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref failed">22</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">12:30:17.975 classpath:conduitApp/feature/HomePage.feature:22
+Then status 200
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+classpath:conduitApp/feature/HomePage.feature:22
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.articles == &#39;#[10]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">12:30:17.975 classpath:conduitApp/feature/HomePage.feature:23
+And match response.articles == &#39;#[10]&#39;
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+classpath:conduitApp/feature/HomePage.feature:22
+classpath:conduitApp/feature/HomePage.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#making use of fuzzy validattion i.e #string and schema validation</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref failed">25</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.article ==</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.25">{
+&quot;slug&quot;: &quot;#string&quot;,
+&quot;title&quot;: &quot;#string&quot;,
+&quot;description&quot;: &quot;#string&quot;,
+&quot;body&quot;: &quot;#string&quot;,
+&quot;tagList&quot;: &#39;#array&#39;,
+&quot;createdAt&quot;: &#39;#? timeValidator(_)&#39;,
+&quot;updatedAt&quot;: &#39;#? timeValidator(_)&#39;,
+&quot;favorited&quot;: &#39;#false&#39;,
+&quot;favoritesCount&quot;: 0,
+&quot;author&quot;: {
+    &quot;username&quot;: &quot;#string&quot;,
+    &quot;bio&quot;: &quot;##string&quot;,
+    &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+    &quot;following&quot;: &#39;#false&#39;
+}
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="0.25">12:30:17.975 classpath:conduitApp/feature/HomePage.feature:25
+And match response.article ==
+&quot;&quot;&quot;
+{
+&quot;slug&quot;: &quot;#string&quot;,
+&quot;title&quot;: &quot;#string&quot;,
+&quot;description&quot;: &quot;#string&quot;,
+&quot;body&quot;: &quot;#string&quot;,
+&quot;tagList&quot;: &#39;#array&#39;,
+&quot;createdAt&quot;: &#39;#? timeValidator(_)&#39;,
+&quot;updatedAt&quot;: &#39;#? timeValidator(_)&#39;,
+&quot;favorited&quot;: &#39;#false&#39;,
+&quot;favoritesCount&quot;: 0,
+&quot;author&quot;: {
+    &quot;username&quot;: &quot;#string&quot;,
+    &quot;bio&quot;: &quot;##string&quot;,
+    &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+    &quot;following&quot;: &#39;#false&#39;
+}
+}
+&quot;&quot;&quot;
+&gt;&gt; classpath:conduitApp/feature/HomePage.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiURL: &#39;https://api.realworld.io/api/&#39;
+09:     
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userName = &#39;karate8108@karate.com&#39;;
+13:     config.userPasskey = &#39;karate12&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle(&#39;classpath:helper/CreateToken.feature&#39;,config).authToken
+20:   karate.configure(&#39;headers&#39;,{Authorization: &#39;Token &#39;+accessToken})
+21:   return config;
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- &lt;js&gt;.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+classpath:conduitApp/feature/HomePage.feature:22
+classpath:conduitApp/feature/HomePage.feature:23
+classpath:conduitApp/feature/HomePage.feature:25
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

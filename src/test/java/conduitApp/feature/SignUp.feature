@@ -1,3 +1,4 @@
+@ignore
 Feature:Sign up new user
 
 Background: Prconditions

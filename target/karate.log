@@ -636,3 +636,3704 @@
 14:01:56.700 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
 14:01:56.818 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:conduitApp/feature/SignUp.feature
 14:01:56.944 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:conduitApp/users/users.feature
+15:08:56.846 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:08:56.851 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684834736850
+15:08:56.859 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+15:08:58.069 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:08:58.081 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+15:08:58.808 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+15:09:01.880 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3068
+1 < 200
+1 < Date: Tue, 23 May 2023 09:39:01 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-H51ITjpaXrtxAwg4powU4kmW62w"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sWHDQ5zznUKjVrevWv91vW4hBMcq4KjoikbmN82K1vMR3YsmETsLDtN%2FVeGYm3n7fFdgf2NA6Q2P%2BToyqIBKCczcGOqioovWv5d9facVv39w1ENyoJipvBIZYyDxgBymFPay"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc544e7d5fbb38-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDc0MSwiZXhwIjoxNjkwMDE4NzQxfQ.UYm8UMx2vxbyiUpPlzEl4PRratOo1z5MtMAwCxKgmD8"}}
+
+15:09:01.887 [pool-1-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+15:09:01.896 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+15:09:01.896 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDc0MSwiZXhwIjoxNjkwMDE4NzQxfQ.UYm8UMx2vxbyiUpPlzEl4PRratOo1z5MtMAwCxKgmD8
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:09:01.903 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDc0MSwiZXhwIjoxNjkwMDE4NzQxfQ.UYm8UMx2vxbyiUpPlzEl4PRratOo1z5MtMAwCxKgmD8
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:09:01.904 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+15:09:01.912 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+15:09:01.913 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDc0MSwiZXhwIjoxNjkwMDE4NzQxfQ.UYm8UMx2vxbyiUpPlzEl4PRratOo1z5MtMAwCxKgmD8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+15:09:01.921 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDc0MSwiZXhwIjoxNjkwMDE4NzQxfQ.UYm8UMx2vxbyiUpPlzEl4PRratOo1z5MtMAwCxKgmD8
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:09:02.772 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 859
+1 < 201
+1 < Date: Tue, 23 May 2023 09:39:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1684834792
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9WVH9jCqH9UjiK%2FjxEijYEyvo5uBzc4R2%2FqDwQe5e4eBsQnhhGSWYfFm4hLxp3rqes93rBhCfWQduvZ1UwfPRRASFNK2%2FAOWUmtbjqW3618kSo8RfWYBaF0pSSZvIo8sM2RMJyQKvXD5GPrnfTU%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc54549d953666-FRA
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+15:09:02.776 [pool-1-thread-4] INFO  com.intuit.karate - [print] created id is:  11 
+15:09:02.941 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1044
+1 < 200
+1 < Date: Tue, 23 May 2023 09:39:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-QAIKJ+jzFJHRIavFYxLRj4MZAjA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SihFATNadbtILvctLBd8A40pAQOMQuemHLL6qYGCn4gfl%2B2ddr8dagotseDaSSFbLY8CXHfXJ%2Bs%2F%2F21IpmQkg8vUHjpZKgwei7Vjb%2FxHOXI7DYAPd%2B2TgdWWPioBYv6nm0FN"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc54536d9bbbb6-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","quia","cupiditate","deserunt"]}
+
+15:09:02.952 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:10
+And match response contains any ['indroduction','hi','checking']
+match failed: CONTAINS_ANY
+  $ | data types don't match (MAP:LIST)
+  {"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","quia","cupiditate","deserunt"]}
+  ["indroduction","hi","checking"]
+
+classpath:conduitApp/feature/HomePage.feature:10
+15:09:03.150 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1228
+1 < 200
+1 < Date: Tue, 23 May 2023 09:39:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8WU%2FjckYv1ITv07prf1z0eMIvgDWiSVW3CQV3bapLyNxBmw%2F1gBYWJDVi7xptDmohpTjsbE12BFXRnu0%2B0mxthufD5qkmWKzvpksCYewQAl%2F7YDFaOZP%2BYggYAAGZA2C%2BkLx"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc545398ca3a82-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+15:09:03.634 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1731
+1 < 200
+1 < Date: Tue, 23 May 2023 09:39:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1683493076
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 16598
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Eit6RCYRYNkddEPadLi2rbhX1vY6%2FXV41fxl1G9U4I04x%2FzRWcGJz5nPm5%2B3VNqADRTNSTaubPMU3%2FpPScZn7778wGAMykA5WmAP5yGp1PuYa1zqMgm4ay0DinexArm1V3QfoucuTjwOQVPBDhI%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc545abfc19293-FRA
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+15:09:03.655 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDc0MSwiZXhwIjoxNjkwMDE4NzQxfQ.UYm8UMx2vxbyiUpPlzEl4PRratOo1z5MtMAwCxKgmD8
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+2 > Accept-Encoding: gzip,deflate
+
+
+15:09:04.000 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+15:09:04.353 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 697
+2 < 200
+2 < Date: Tue, 23 May 2023 09:39:04 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 998
+2 < X-Ratelimit-Reset: 1682575866
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 6530
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gYiPLj9%2BqSjepOYwORjXJG8U3Bx8vmrSPBktPjLNLmDwTdihjNjcrphDEUOugdYy%2FNiJx5CUj9yZSVFRjHEUX3om%2BKQZCce4q%2FGdu46D2xkaNUyH3%2BTVZSM99eRzMWoRMk0zQMghLkDw2ElF8ag%3D"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7cbc545fb8a11a7d-FRA
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+15:09:04.431 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:conduitApp/users/users.feature
+15:11:45.608 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:11:45.613 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684834905612
+15:11:45.621 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+15:11:46.921 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+15:11:46.941 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+15:11:47.710 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+15:11:48.630 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 918
+1 < 200
+1 < Date: Tue, 23 May 2023 09:41:48 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-uhb+U3JlNYdAhY6gefjJdzlp7Bk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VjlhuW5kHWvPsHl9gF62xUxqavVjf3AABF4oXq10VO3ghgiFz1IeL18BNRb0KWccWOizsJ7MEEDdikcC2hwFpc5G5Fhvy7K0xaf8vz53gQuVlXh2BNBBmoofCqbTyBfhEpoy"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc5860aaf2994a-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDkwOCwiZXhwIjoxNjkwMDE4OTA4fQ.3iY63B_QktzZGDixApyYbkQrPJdzMkS7aUW6b6m8Z_w"}}
+
+15:11:48.637 [pool-1-thread-3] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+15:11:48.645 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDkwOCwiZXhwIjoxNjkwMDE4OTA4fQ.3iY63B_QktzZGDixApyYbkQrPJdzMkS7aUW6b6m8Z_w
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:11:48.645 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+15:11:48.653 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:11:48.656 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDkwOCwiZXhwIjoxNjkwMDE4OTA4fQ.3iY63B_QktzZGDixApyYbkQrPJdzMkS7aUW6b6m8Z_w
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+15:11:48.662 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDkwOCwiZXhwIjoxNjkwMDE4OTA4fQ.3iY63B_QktzZGDixApyYbkQrPJdzMkS7aUW6b6m8Z_w
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:11:48.662 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+15:11:48.673 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDkwOCwiZXhwIjoxNjkwMDE4OTA4fQ.3iY63B_QktzZGDixApyYbkQrPJdzMkS7aUW6b6m8Z_w
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:11:49.641 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 996
+1 < 200
+1 < Date: Tue, 23 May 2023 09:41:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1676676824
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 5383
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=QMYaaHyZDbnCEp84e8NsbQxhyKTZpnRFelRxugSuR77S%2BMcTw5uaOrqnbvvcqsgVL21%2BIZD4lw9QF59HbywOC2FGfEreG%2FDLzFVDu8RtEOw9PteK0jnCW02M6JixpU4YZoqZGf2SRKtSIbS3l7o%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc5868b9ce1d92-FRA
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+15:11:49.660 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDgzNDkwOCwiZXhwIjoxNjkwMDE4OTA4fQ.3iY63B_QktzZGDixApyYbkQrPJdzMkS7aUW6b6m8Z_w
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+2 > Accept-Encoding: gzip,deflate
+
+
+15:11:49.813 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1157
+1 < 201
+1 < Date: Tue, 23 May 2023 09:41:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1684834912
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JWUbKqfy4Yx1govxFj5Dy2eU0707sBf0kkGTgfzS%2BflFFnEhO6bWwjzgIYMKcaLE9GHYeawshYY2cklfYZEcgsIUZGbxcSmXCMR%2FGf7gWQzluWQgZnlL4ypeYZysJ9ANbz6SmMq7kNvMZXfBJss%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc5868ba6f363e-FRA
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+15:11:49.817 [pool-1-thread-4] INFO  com.intuit.karate - [print] created id is:  11 
+15:11:50.137 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 477
+2 < 200
+2 < Date: Tue, 23 May 2023 09:41:50 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1681926030
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 21155
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wCPCBBOnllUzkSSFarBVABY3PzlEsV91pDyTt4LlaKCCDrgAKHFon1RDQ8xoYn%2FFTfXSEBXN4hA%2Bf1ktXW5G3ll%2BBgNiaHpWgv7MaYwBR%2BmMC19msG7PyLi1P%2FsT2Mtv1R43njP6YoHjtp%2Fw%2BOQ%3D"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7cbc586bdac7373d-FRA
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+15:11:51.266 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2604
+1 < 200
+1 < Date: Tue, 23 May 2023 09:41:51 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-QAIKJ+jzFJHRIavFYxLRj4MZAjA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FC1qAGuVfWCZ66vV4FIgyWYYj7K443c6GMzUEmHOwSvwGml6XF2PbuiGDjHX7teklMzCKE0ZGyctQKi05FCtPOnFTlgtQD%2F4HwnHTVXss7%2BxheNh7RntVdUXOTMUreJriu9o"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc58689e5a1e6e-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","quia","cupiditate","deserunt"]}
+
+15:11:52.325 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3652
+1 < 200
+1 < Date: Tue, 23 May 2023 09:41:51 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KwyeTOTujpMmRtosOciw0rBVmPOSThlpn7fjeZr4pTUdvDvzPYJFRiSrNnNlVAaErlvmV94XoFu0zz5Wi%2BiZZpi%2BmySI%2FYlmr7PhLSjEb3TW%2BO4bBMKHhUECjn8YgFUNbx6d"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cbc5868bd5d377b-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+15:11:52.932 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+15:11:53.110 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:conduitApp/users/users.feature
+12:18:18.878 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:18:18.883 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684910898882
+12:18:18.894 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:18:20.128 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+12:18:20.139 [pool-1-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:18:20.860 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:18:21.853 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 989
+1 < 200
+1 < Date: Wed, 24 May 2023 06:48:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-JrNNgrfonNNUMPOaDexTB7OLrH8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yNAQNFrWuiMikqDfHO0ZYZjPulgaheEQcDUPXoKsSZPjKKiu0j8jMJBioScDmmdlLgfbjEjjK3sRL8a4bYnjqPSxdUv4K66LGPYvGSkL4bsDzypG%2FAMDWBwwvqd43nOGXz7n"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc397ae2b783642-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMDkwMSwiZXhwIjoxNjkwMDk0OTAxfQ.K_xjTY4Yw4V2ShezHTyEQkGEQjRP4NWipqvGOv8mBgw"}}
+
+12:18:21.859 [pool-1-thread-4] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:18:21.871 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+12:18:21.873 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMDkwMSwiZXhwIjoxNjkwMDk0OTAxfQ.K_xjTY4Yw4V2ShezHTyEQkGEQjRP4NWipqvGOv8mBgw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+12:18:21.880 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMDkwMSwiZXhwIjoxNjkwMDk0OTAxfQ.K_xjTY4Yw4V2ShezHTyEQkGEQjRP4NWipqvGOv8mBgw
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:18:21.882 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:18:21.892 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:18:21.902 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMDkwMSwiZXhwIjoxNjkwMDk0OTAxfQ.K_xjTY4Yw4V2ShezHTyEQkGEQjRP4NWipqvGOv8mBgw
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:18:21.921 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMDkwMSwiZXhwIjoxNjkwMDk0OTAxfQ.K_xjTY4Yw4V2ShezHTyEQkGEQjRP4NWipqvGOv8mBgw
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:18:22.075 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 195
+1 < 200
+1 < Date: Wed, 24 May 2023 06:48:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 957
+1 < X-Ratelimit-Reset: 1682506840
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 24981
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=w2RKO%2Fu6Hqxw1pJapCjPqyq1HsG5FQztlDlUN2baRSE7gBdcoDsCDXhWCCp6FZb8iTJQ76Rtz%2B9yJHw4M884CDNmmSnpONENECjeGlSU0dDzQENNKd6KmdpC5xmYeTRKlpXOoPLkMcPJoiWx3jk%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc397b1e8c4f415-BOM
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+12:18:22.103 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMDkwMSwiZXhwIjoxNjkwMDk0OTAxfQ.K_xjTY4Yw4V2ShezHTyEQkGEQjRP4NWipqvGOv8mBgw
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+2 > Accept-Encoding: gzip,deflate
+
+
+12:18:22.178 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 75
+2 < 200
+2 < Date: Wed, 24 May 2023 06:48:22 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1683885278
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 11096
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OpGGMAx0HVTFlNscG%2BeG5OVSQkmQYdBqd1ViG19WPLEFPwbs51zmxZTcpI3Jom31eCBSMOjMnDFvvk95FyU9jgWzl8k5CYNbMayfPcWtMTeC2zdRemY0vYbAOsTXNaAkCGmOWQJvVaotqorGte4%3D"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7cc397b289b18595-BOM
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+12:18:22.748 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 875
+1 < 201
+1 < Date: Wed, 24 May 2023 06:48:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1684910937
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Fe2pi8sPPm1kB7MR7UE3wEArkVkNufq3Cz9HeQTaI%2FN7YLVbfB17%2B%2FKewrjiX7zT8mwMOtgwfrtZO70WJpb9SMcmVk3Rmr6VicMpOZWApNYa7V9dmZHKXzHHa7ONKtGsxiTAPqefWly2SWD2%2FRo%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc397b1edde0e0c-BOM
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+12:18:22.752 [pool-1-thread-4] INFO  com.intuit.karate - [print] created id is:  11 
+12:18:22.763 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 860
+1 < 200
+1 < Date: Wed, 24 May 2023 06:48:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-tkjaEDbfn0oRIptGvmkCpxtiAT8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1TbKOvzEehPixWOVvf55GaebxXlFwjJ%2F4ZK00vNjTOJSEcX4m6P8%2FoMFz8mGyzCCyTkeMJEFRZeQ%2B374SNjaiEYmmSunBcxqcY88C4%2FkGxky2oAepP56eMn4Kdl1%2BBxN6b3l"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc397b2feb62c65-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","cupiditate","quia","deserunt"]}
+
+12:18:22.978 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1056
+1 < 200
+1 < Date: Wed, 24 May 2023 06:48:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tBGLA%2FWu4VPF1axX%2F%2Bl%2F3rTaUn7QhRflS9NfqyJXuLU9P6yQZqs1Rvw%2Fmj6b9PAEu1yYXJ3UHbUBxRCjpT%2Fejv0e9EFMCys2tasq64vTDwNa6zPRh301t9aEkNSKGhARf2vd"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc397b32a0d18e2-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+12:18:22.983 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:25
+And match response.article ==
+"""
+{
+"slug": "#string",
+"title": "#string",
+"description": "#string",
+"body": "#string",
+"tagList": '#array',
+"createdAt": '#? timeValidator(_)',
+"updatedAt": '#? timeValidator(_)',
+"favorited": '#false',
+"favoritesCount": 0,
+"author": {
+    "username": "#string",
+    "bio": "##string",
+    "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+    "following": '#false'
+}
+}
+"""
+match failed: EQUALS
+  $ | actual path does not exist (STRING:MAP)
+  '#notpresent'
+  {"slug":"#string","title":"#string","description":"#string","body":"#string","tagList":"#array","createdAt":"#? timeValidator(_)","updatedAt":"#? timeValidator(_)","favorited":"#false","favoritesCount":0,"author":{"username":"#string","bio":"##string","image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":"#false"}}
+
+classpath:conduitApp/feature/HomePage.feature:25
+12:18:23.875 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+12:18:24.130 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:conduitApp/users/users.feature
+12:20:48.614 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:20:48.620 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684911048618
+12:20:48.632 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:20:50.025 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:20:50.037 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:20:50.602 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:20:51.412 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 809
+1 < 200
+1 < Date: Wed, 24 May 2023 06:50:51 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-hrEel2c7i0vmOS7jFzPD/hdZt9U"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TFmttor6v9c2IfW%2BEM%2BSUaAcOR7zXNAaKYXvzG720L1l49oPBFsslXlUbS9gMvMkCzZyJ7AjCPHqj6TxYoAUs6s0jEUaYftIBt%2FsKmPw2%2FJFCgvHVK0aHHVFvLRWX756oULF"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc39b55295e39df-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTA1MSwiZXhwIjoxNjkwMDk1MDUxfQ.nnX5Q2WkaeZcVLfLU_ruzG6VNlzN9HOHWJZQlawxnLY"}}
+
+12:20:51.419 [pool-1-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:20:51.428 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTA1MSwiZXhwIjoxNjkwMDk1MDUxfQ.nnX5Q2WkaeZcVLfLU_ruzG6VNlzN9HOHWJZQlawxnLY
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:20:51.428 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:20:51.454 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTA1MSwiZXhwIjoxNjkwMDk1MDUxfQ.nnX5Q2WkaeZcVLfLU_ruzG6VNlzN9HOHWJZQlawxnLY
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:20:52.292 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 863
+1 < 200
+1 < Date: Wed, 24 May 2023 06:50:52 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-tkjaEDbfn0oRIptGvmkCpxtiAT8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EFZW5dAUvTezYLl6FLKE8iluiLkx%2B3i1muWo66LZRbF89BkoR%2BBLNhFJKrHJRNu7AMbnu%2BAPXGz9R2ijSwGzkBdpXV61U%2FxpnS2vSffOeKp%2Baes9KY94e%2BkOiPa9J0dUhudt"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc39b597be19a18-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","cupiditate","quia","deserunt"]}
+
+12:20:52.495 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1041
+1 < 200
+1 < Date: Wed, 24 May 2023 06:50:52 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=feh%2BC8Uxw7znfF7g14jLgQ6zrjpcdkmQscO4Xd7ZxkI79KcpS3lu%2FvtipeGDXX9j8qyF9EXgaEqc0tQ0xPvu3MJZthDtZbsb184J3UjvF71vL9SZIybq74aBLJBkD66oSubN"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc39b59ad8c3718-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+12:20:52.503 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:25
+And match response.article ==
+"""
+{
+"slug": "#string",
+"title": "#string",
+"description": "#string",
+"body": "#string",
+"tagList": '#array',
+"createdAt": '#? timeValidator(_)',
+"updatedAt": '#? timeValidator(_)',
+"favorited": '#false',
+"favoritesCount": 0,
+"author": {
+    "username": "#string",
+    "bio": "##string",
+    "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+    "following": '#false'
+}
+}
+"""
+match failed: EQUALS
+  $ | actual path does not exist (STRING:MAP)
+  '#notpresent'
+  {"slug":"#string","title":"#string","description":"#string","body":"#string","tagList":"#array","createdAt":"#? timeValidator(_)","updatedAt":"#? timeValidator(_)","favorited":"#false","favoritesCount":0,"author":{"username":"#string","bio":"##string","image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":"#false"}}
+
+classpath:conduitApp/feature/HomePage.feature:25
+12:20:53.244 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+12:30:16.331 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:30:16.335 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684911616334
+12:30:16.343 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:30:17.353 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:17.365 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:30:17.931 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:30:17.953 [pool-1-thread-1] ERROR com.intuit.karate - java.net.UnknownHostException: No such host is known (api.realworld.io), http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+12:30:17.955 [pool-1-thread-1] ERROR com.intuit.karate - classpath:helper/CreateToken.feature:7
+When method post
+http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+12:30:17.955 [pool-1-thread-1] WARN  com.intuit.karate - callSingle() will cache an exception
+12:30:17.956 [pool-1-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:30:17.956 [pool-1-thread-1] WARN  com.intuit.karate - callSingle() cached result is an exception
+12:30:17.967 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:4
+Given url apiURL
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+12:30:17.968 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:6
+Given path 'tags'
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+12:30:17.968 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:7
+When method Get
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+12:30:17.968 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:8
+Then status 200
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+12:30:17.968 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:9
+And match response.tags contains ['welcome','introduction']
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+12:30:17.968 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:10
+And match response.tags contains any ['introduction','hi','checking']
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+12:30:17.969 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:11
+And match response.tags !contains 'truck'
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+classpath:conduitApp/feature/HomePage.feature:11
+12:30:17.969 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:12
+And match response.tags == "#array"
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+classpath:conduitApp/feature/HomePage.feature:11
+classpath:conduitApp/feature/HomePage.feature:12
+12:30:17.969 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:13
+And match each response.tags == "#string"
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+classpath:conduitApp/feature/HomePage.feature:11
+classpath:conduitApp/feature/HomePage.feature:12
+classpath:conduitApp/feature/HomePage.feature:13
+12:30:17.971 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:17.972 [pool-1-thread-2] WARN  com.intuit.karate - callSingle() cached result is an exception
+12:30:17.973 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:4
+Given url apiURL
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+12:30:17.974 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:17
+* def timeValidator = read('classpath:helper/timeValidator.js')
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+12:30:17.974 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:19
+Given params {limit:10, offset:0}
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+12:30:17.974 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:20
+Given path 'articles'
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+12:30:17.974 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:21
+When method Get
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+12:30:17.975 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:22
+Then status 200
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+classpath:conduitApp/feature/HomePage.feature:22
+12:30:17.975 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:23
+And match response.articles == '#[10]'
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+classpath:conduitApp/feature/HomePage.feature:22
+classpath:conduitApp/feature/HomePage.feature:23
+12:30:17.975 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:25
+And match response.article ==
+"""
+{
+"slug": "#string",
+"title": "#string",
+"description": "#string",
+"body": "#string",
+"tagList": '#array',
+"createdAt": '#? timeValidator(_)',
+"updatedAt": '#? timeValidator(_)',
+"favorited": '#false',
+"favoritesCount": 0,
+"author": {
+    "username": "#string",
+    "bio": "##string",
+    "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+    "following": '#false'
+}
+}
+"""
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 464 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+classpath:conduitApp/feature/HomePage.feature:22
+classpath:conduitApp/feature/HomePage.feature:23
+classpath:conduitApp/feature/HomePage.feature:25
+12:30:18.793 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+12:30:43.507 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:30:43.512 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684911643511
+12:30:43.521 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:30:44.588 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:44.599 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:30:45.157 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:30:45.176 [pool-1-thread-1] ERROR com.intuit.karate - java.net.UnknownHostException: No such host is known (api.realworld.io), http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+12:30:45.177 [pool-1-thread-1] ERROR com.intuit.karate - classpath:helper/CreateToken.feature:7
+When method post
+http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+12:30:45.178 [pool-1-thread-1] WARN  com.intuit.karate - callSingle() will cache an exception
+12:30:45.178 [pool-1-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:30:45.179 [pool-1-thread-1] WARN  com.intuit.karate - callSingle() cached result is an exception
+12:30:45.190 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:4
+Given url apiURL
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+12:30:45.191 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:6
+Given path 'tags'
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+12:30:45.191 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:7
+When method Get
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+12:30:45.191 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:8
+Then status 200
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+12:30:45.191 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:9
+And match response.tags contains ['welcome','introduction']
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+12:30:45.192 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:10
+And match response.tags contains any ['introduction','hi','checking']
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+12:30:45.192 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:11
+And match response.tags !contains 'truck'
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+classpath:conduitApp/feature/HomePage.feature:11
+12:30:45.192 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:12
+And match response.tags == "#array"
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+classpath:conduitApp/feature/HomePage.feature:11
+classpath:conduitApp/feature/HomePage.feature:12
+12:30:45.192 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:13
+And match each response.tags == "#string"
+>> classpath:conduitApp/feature/HomePage.feature:5
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:6
+classpath:conduitApp/feature/HomePage.feature:7
+classpath:conduitApp/feature/HomePage.feature:8
+classpath:conduitApp/feature/HomePage.feature:9
+classpath:conduitApp/feature/HomePage.feature:10
+classpath:conduitApp/feature/HomePage.feature:11
+classpath:conduitApp/feature/HomePage.feature:12
+classpath:conduitApp/feature/HomePage.feature:13
+12:30:45.194 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:45.195 [pool-1-thread-2] WARN  com.intuit.karate - callSingle() cached result is an exception
+12:30:45.197 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:4
+Given url apiURL
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+12:30:45.197 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:17
+* def timeValidator = read('classpath:helper/timeValidator.js')
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+12:30:45.197 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:19
+Given params {limit:10, offset:0}
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+12:30:45.197 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:20
+Given path 'articles'
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+12:30:45.198 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:21
+When method Get
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+12:30:45.198 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:22
+Then status 200
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+classpath:conduitApp/feature/HomePage.feature:22
+12:30:45.198 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:23
+And match response.articles == '#[10]'
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+classpath:conduitApp/feature/HomePage.feature:22
+classpath:conduitApp/feature/HomePage.feature:23
+12:30:45.198 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:25
+And match response.article ==
+"""
+{
+"slug": "#string",
+"title": "#string",
+"description": "#string",
+"body": "#string",
+"tagList": '#array',
+"createdAt": '#? timeValidator(_)',
+"updatedAt": '#? timeValidator(_)',
+"favorited": '#false',
+"favoritesCount": 0,
+"author": {
+    "username": "#string",
+    "bio": "##string",
+    "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+    "following": '#false'
+}
+}
+"""
+>> classpath:conduitApp/feature/HomePage.feature:16
+>> karate-config.js failed
+>> http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiURL: 'https://api.realworld.io/api/'
+09:     
+10:   }
+11:   if (env == 'dev') {
+12:     config.userName = 'karate8108@karate.com';
+13:     config.userPasskey = 'karate12';
+14:   } else if (env == 'e2e') {
+15:     // customize
+16:   }
+17: 
+18:   
+19:   var accessToken =  karate.callSingle('classpath:helper/CreateToken.feature',config).authToken
+20:   karate.configure('headers',{Authorization: 'Token '+accessToken})
+21:   return config;
+22: }
+<<<<
+org.graalvm.polyglot.PolyglotException: http call failed after 440 milliseconds for url: https://api.realworld.io/api/users/login
+classpath:helper/CreateToken.feature:7
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:238)
+- <js>.fn(Unnamed:19)
+
+classpath:conduitApp/feature/HomePage.feature:4
+classpath:conduitApp/feature/HomePage.feature:17
+classpath:conduitApp/feature/HomePage.feature:19
+classpath:conduitApp/feature/HomePage.feature:20
+classpath:conduitApp/feature/HomePage.feature:21
+classpath:conduitApp/feature/HomePage.feature:22
+classpath:conduitApp/feature/HomePage.feature:23
+classpath:conduitApp/feature/HomePage.feature:25
+12:30:46.043 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+12:31:39.082 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:31:39.087 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684911699086
+12:31:39.097 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:31:40.244 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:31:40.256 [pool-1-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:31:40.800 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:31:41.639 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 838
+1 < 200
+1 < Date: Wed, 24 May 2023 07:01:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-5IKs7bG9ySHb1yNzWfocoUliIfQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gxuXuVJ4j%2FxrM33ULBl%2FW5Dmq5ANwtbIKSUqNHBLbCvkcimEAGeYtWza%2BZhuPUtRny9OKkcPCTtzm1Dhk9UwVBgsbm0zWAjAN69RdsYOSq1HlUzNh9azzVkfkYSZCHxE7%2B4K"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3ab350fe0995a-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTcwMSwiZXhwIjoxNjkwMDk1NzAxfQ.Qz7tJikaSxX29Y7_0oNz8Ox1LPHzCZ5UQcr-yM7ZRqY"}}
+
+12:31:41.649 [pool-1-thread-2] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:31:41.659 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:31:41.667 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTcwMSwiZXhwIjoxNjkwMDk1NzAxfQ.Qz7tJikaSxX29Y7_0oNz8Ox1LPHzCZ5UQcr-yM7ZRqY
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:31:41.680 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTcwMSwiZXhwIjoxNjkwMDk1NzAxfQ.Qz7tJikaSxX29Y7_0oNz8Ox1LPHzCZ5UQcr-yM7ZRqY
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:31:42.493 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 825
+1 < 200
+1 < Date: Wed, 24 May 2023 07:01:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-tkjaEDbfn0oRIptGvmkCpxtiAT8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=H4o4pV%2F6YLCsTDEw0Iv7NFpYUBj5xZwrSBxAX487y0WsPzXxhMgGo16RwOb4%2FDh7ELPJrL5QbQbnGyoXP89J7xd3%2B7gLYxn7X%2FtT3ISNiSw%2FPz6QWjB022DkY5gO%2BnqKsy4l"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3ab397c422c1a-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","cupiditate","quia","deserunt"]}
+
+12:31:42.730 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1050
+1 < 200
+1 < Date: Wed, 24 May 2023 07:01:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KZpKJNwVg4OpBztLzp%2FkWmF1WdQTyglGNAIm3RvMoBOEjaI50ObpYP2M8c519opIcE8YpW5ZNa40LYVoXemWHgtTTQZQq0i2jV22K4aJyAQ5lnUftVjjjqnM3F5S3rPd4ycv"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3ab39a8692c62-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+12:31:42.739 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:25
+And match response.article ==
+"""
+{
+"slug": "#string",
+"title": "#string",
+"description": "#string",
+"body": "#string",
+"tagList": '#array',
+"createdAt": '#? timeValidator(_)',
+"updatedAt": '#? timeValidator(_)',
+"favorited": '#false',
+"favoritesCount": 0,
+"author": {
+    "username": "#string",
+    "bio": "##string",
+    "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+    "following": '#false'
+}
+}
+"""
+match failed: EQUALS
+  $ | actual path does not exist (STRING:MAP)
+  '#notpresent'
+  {"slug":"#string","title":"#string","description":"#string","body":"#string","tagList":"#array","createdAt":"#? timeValidator(_)","updatedAt":"#? timeValidator(_)","favorited":"#false","favoritesCount":0,"author":{"username":"#string","bio":"##string","image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":"#false"}}
+
+classpath:conduitApp/feature/HomePage.feature:25
+12:31:43.469 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+12:34:15.444 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:34:15.450 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684911855448
+12:34:15.460 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:34:16.465 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:16.476 [pool-1-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:34:16.981 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:34:17.906 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 924
+1 < 200
+1 < Date: Wed, 24 May 2023 07:04:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-0iY0elx+apZx1nh6Ro+6k3tOgn4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IGIWRLhLvKtVVCgIHu8IsmXMXAARAGy2%2BfqdjbA8Mqid%2FQR5oQRg8NeSfO7IuxAxHiYvI0mIX5AoiXwjhYBGk1irM17ymGEL%2BTJqSTiDYleuv19Y1jmurqzMJw472GpLzAtN"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3af05dd5a9bd7-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTg1NywiZXhwIjoxNjkwMDk1ODU3fQ.Yd94We-nzBYuw7ceJgEVDXvcE4HH5521OjMUQfeo1RA"}}
+
+12:34:17.917 [pool-1-thread-2] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:34:17.928 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:17.938 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTg1NywiZXhwIjoxNjkwMDk1ODU3fQ.Yd94We-nzBYuw7ceJgEVDXvcE4HH5521OjMUQfeo1RA
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:34:17.952 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTg1NywiZXhwIjoxNjkwMDk1ODU3fQ.Yd94We-nzBYuw7ceJgEVDXvcE4HH5521OjMUQfeo1RA
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:34:18.844 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 906
+1 < 200
+1 < Date: Wed, 24 May 2023 07:04:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-tkjaEDbfn0oRIptGvmkCpxtiAT8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WbrCNKIootqEivsnwxY%2FsjOmg1CziQvlchBFKt03LW8bT3c9DHs7RX%2FmDzITe2OxwGXV%2BE3bw%2F0vbQhb7VT0x1nCT0cTlta%2BqgnTXw0FdqGC1Vg1YJQzoy2wE79bpVGiLHM2"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3af0a2dc018dc-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","cupiditate","quia","deserunt"]}
+
+12:34:19.022 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1070
+1 < 200
+1 < Date: Wed, 24 May 2023 07:04:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6SAEzn6EhOwWRPE0EO4GngEu0Djg%2Bo1ucBS%2FDcGgUmpqgVY%2BcCmrY5PSg8832Oyus54BUnK%2FbuAA2m8trzwGInOPnmeO2xCPmSjEFDTjjlsr%2B4GZDwLxY5JXnKswayZ11CMx"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3af0a4df6994a-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+12:34:19.030 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:25
+And match each response.article ==
+"""
+{
+"slug": "#string",
+"title": "#string",
+"description": "#string",
+"body": "#string",
+"tagList": '#array',
+"createdAt": '#? timeValidator(_)',
+"updatedAt": '#? timeValidator(_)',
+"favorited": '#false',
+"favoritesCount": 0,
+"author": {
+    "username": "#string",
+    "bio": "##string",
+    "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+    "following": '#false'
+}
+}
+"""
+match failed: EACH_EQUALS
+  $ | actual is not an array or list (STRING:MAP)
+  '#notpresent'
+  {"slug":"#string","title":"#string","description":"#string","body":"#string","tagList":"#array","createdAt":"#? timeValidator(_)","updatedAt":"#? timeValidator(_)","favorited":"#false","favoritesCount":0,"author":{"username":"#string","bio":"##string","image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":"#false"}}
+
+classpath:conduitApp/feature/HomePage.feature:25
+12:34:19.746 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+12:35:32.959 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:35:32.964 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684911932963
+12:35:32.973 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:35:34.001 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:35:34.014 [pool-1-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:35:34.565 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:35:35.355 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 788
+1 < 200
+1 < Date: Wed, 24 May 2023 07:05:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-ho/la8/AofXZhbwpKNTazkPSLrE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=90ckhPIFPfhMzZjasiPPImrTO%2FHh0%2FJDQ3WwMuHBINuEYmbb4V37MFWflXtrnGiDwwFc72Czc7irC0oywc%2FLSnKdAlyYLIQVgCMVwbnMXCUxrodXyvS4RRzvRld%2Fb1LAUCnd"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3b0e9dccd39c2-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTkzNSwiZXhwIjoxNjkwMDk1OTM1fQ.8oDPsBHwRVxLOIvtL9LPtDsWYLBXClD3wHdbIrqb3Gw"}}
+
+12:35:35.361 [pool-1-thread-2] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:35:35.370 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:35:35.376 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTkzNSwiZXhwIjoxNjkwMDk1OTM1fQ.8oDPsBHwRVxLOIvtL9LPtDsWYLBXClD3wHdbIrqb3Gw
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:35:35.388 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMTkzNSwiZXhwIjoxNjkwMDk1OTM1fQ.8oDPsBHwRVxLOIvtL9LPtDsWYLBXClD3wHdbIrqb3Gw
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:35:36.363 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 987
+1 < 200
+1 < Date: Wed, 24 May 2023 07:05:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-tkjaEDbfn0oRIptGvmkCpxtiAT8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=seXuYz9tcJLhXpuaWd1pO2JVHYCXEUmtdYAOmRPu6eQbHyKKnxYA%2BU%2B3v4GEzgu666XJtoSlIjVe2R92g2DPM7zNdyTdV5u4sc2uJh3GYxwDAkasj4CRaokIlXfnw8FLQWlz"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3b0ee2da337e0-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","cupiditate","quia","deserunt"]}
+
+12:35:36.532 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1143
+1 < 200
+1 < Date: Wed, 24 May 2023 07:05:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UMLLhgSsg3M%2B8Thb9yxOmR8K7lpizO2LO0TvEC0OaPIjv2w0EOum3XqhXw2e5jRICBWxW%2BPXb1q8nS8zB4APESDxA5SyFSKAb%2FKLyWen%2ByFiUHS6egkTc0zeM9IelZrInG8k"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3b0ee5eb53a61-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+12:35:36.540 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:25
+And match each response.article ==
+"""
+{
+"slug": "#string",
+"title": "#string",
+"description": "#string",
+"body": "#string",
+"tagList": '#array',
+"createdAt": '#? timeValidator(_)',
+"updatedAt": '#? timeValidator(_)',
+"favorited": '#boolean',
+"favoritesCount": 0,
+"author": {
+    "username": "#string",
+    "bio": "##string",
+    "image": "#string",
+    "following": '#boolean'
+}
+}
+"""
+match failed: EACH_EQUALS
+  $ | actual is not an array or list (STRING:MAP)
+  '#notpresent'
+  {"slug":"#string","title":"#string","description":"#string","body":"#string","tagList":"#array","createdAt":"#? timeValidator(_)","updatedAt":"#? timeValidator(_)","favorited":"#boolean","favoritesCount":0,"author":{"username":"#string","bio":"##string","image":"#string","following":"#boolean"}}
+
+classpath:conduitApp/feature/HomePage.feature:25
+12:35:37.383 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+12:36:40.375 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:36:40.382 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684912000381
+12:36:40.395 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:36:41.603 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:36:41.617 [pool-1-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:36:42.227 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:36:43.016 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 788
+1 < 200
+1 < Date: Wed, 24 May 2023 07:06:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-S2wCijHOzvTIeuytyGCBV3ou0SA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NA7m5f0imaoLBvmk0BiHcrc0MLoEX%2BXtCbPxoq1o4cxQQ3RMnhH7BAaLHYnw%2BgsR7kZ0lqeVm%2Flnk3shj9b1Emt7mk%2BZ72UTtUjXhtJ%2BJOrpwJvRNd7VAViO%2BE%2B81KDyASOz"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3b290be7e39d3-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMjAwMiwiZXhwIjoxNjkwMDk2MDAyfQ.EjtxxdMX36vW5jKv67aQsBj4HKYIca6HaOJiSF25d2c"}}
+
+12:36:43.023 [pool-1-thread-2] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:36:43.033 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:36:43.041 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMjAwMiwiZXhwIjoxNjkwMDk2MDAyfQ.EjtxxdMX36vW5jKv67aQsBj4HKYIca6HaOJiSF25d2c
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:36:43.053 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMjAwMiwiZXhwIjoxNjkwMDk2MDAyfQ.EjtxxdMX36vW5jKv67aQsBj4HKYIca6HaOJiSF25d2c
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:36:44.035 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 993
+1 < 200
+1 < Date: Wed, 24 May 2023 07:06:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-tkjaEDbfn0oRIptGvmkCpxtiAT8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=slvbhfxqSPUmLugG%2BXQjEEv7i0yiKFxnVxM2tbDJuIpyRz5ClxXJlTaNO6Vi%2FAU4hMdKSVzj3XUAlUX9lv8gP7z31wXOR7k8KH%2B4z2FQSYsXmIPWfT3NdESYhBa0ZuDrXJoe"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3b2950ccd3660-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","cupiditate","quia","deserunt"]}
+
+12:36:44.219 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1164
+1 < 200
+1 < Date: Wed, 24 May 2023 07:06:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=V%2BY5W0hkOBhJwrcs8gveMj0d8RM32UwVWXIP4NHJu3VwhTYYMogdCLkh2FSyTu1aMP7QvKZG2A7%2F3sdsHZ0pQzPsD72xiVHKNJ0A3jvsksIUnP0fRKX4rzoyi9zxA2xrE0VX"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3b2954deb2be6-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+12:36:44.225 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:25
+And match each response.article ==
+"""
+{
+"slug": "#string",
+"title": "#string",
+"description": "#string",
+"body": "#string",
+"tagList": '##array',
+"createdAt": '#? timeValidator(_)',
+"updatedAt": '#? timeValidator(_)',
+"favorited": '#boolean',
+"favoritesCount": 0,
+"author": {
+    "username": "#string",
+    "bio": "##string",
+    "image": "#string",
+    "following": '#boolean'
+}
+}
+"""
+match failed: EACH_EQUALS
+  $ | actual is not an array or list (STRING:MAP)
+  '#notpresent'
+  {"slug":"#string","title":"#string","description":"#string","body":"#string","tagList":"##array","createdAt":"#? timeValidator(_)","updatedAt":"#? timeValidator(_)","favorited":"#boolean","favoritesCount":0,"author":{"username":"#string","bio":"##string","image":"#string","following":"#boolean"}}
+
+classpath:conduitApp/feature/HomePage.feature:25
+12:36:44.998 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+12:38:38.929 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:38:38.934 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684912118933
+12:38:38.945 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:38:39.959 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:38:39.970 [pool-1-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:38:40.519 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:38:41.333 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 811
+1 < 200
+1 < Date: Wed, 24 May 2023 07:08:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-AqBMt8jupc+SFk+kFNJxo4A2GUA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=F0Aj%2Fn%2FoKVpwKPnMum086T7Bus8XfRA4TtykgDEoXNFYta4aAQswbS%2BCx71u11geXLSqrabf484ldRWSwNXiOaRu6SZuwA184eiWv%2FxA6qRWn91RvFyjK8Sf6r2fUndj2DiG"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3b57429dc5c50-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMjEyMSwiZXhwIjoxNjkwMDk2MTIxfQ.6WeT4X6Gas7m6zo-zoxpBcfUjzT8_E7g4zJB8fxlAsk"}}
+
+12:38:41.339 [pool-1-thread-2] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:38:41.347 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:38:41.354 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMjEyMSwiZXhwIjoxNjkwMDk2MTIxfQ.6WeT4X6Gas7m6zo-zoxpBcfUjzT8_E7g4zJB8fxlAsk
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:38:41.364 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMjEyMSwiZXhwIjoxNjkwMDk2MTIxfQ.6WeT4X6Gas7m6zo-zoxpBcfUjzT8_E7g4zJB8fxlAsk
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:38:42.224 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 870
+1 < 200
+1 < Date: Wed, 24 May 2023 07:08:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-tkjaEDbfn0oRIptGvmkCpxtiAT8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=g6n%2F0d8cj98dvLR2m03b%2FxU%2Fwf%2FY584dbkd9B6k7AF2fa%2B6Hsu%2B97DpeIqdAQNzTj3X7ZeijVT23EYeAaCnbDdpKUZQBh0FkJHfBEu%2FKmhtbIVaynh5tA8Lcwe1VjTH4gLh2"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3b5787a7bbb4a-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","cupiditate","quia","deserunt"]}
+
+12:38:42.426 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1061
+1 < 200
+1 < Date: Wed, 24 May 2023 07:08:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ujJPL02%2BZiL4cI8ebH7XnGeK%2FkMJP45Yn%2Frdfm%2FGnX%2BFKQbYV64KywcZp4SsuDO9PKYSvKCr5kBez3KzErfEb1fGe95bYoUtKF7b47kPUonS21xTaST64gpGb5bvF5N6S%2Fwl"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3b5788e92365d-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+12:38:42.435 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:25
+And match each response.article ==
+"""
+{
+"slug": "#string",
+"title": "#string",
+"description": "#string",
+"body": "#string",
+"tagList": '#array',
+"createdAt": '#? timeValidator(_)',
+"updatedAt": '#? timeValidator(_)',
+"favorited": '#boolean',
+"favoritesCount": '#number',
+"author": {
+    "username": "#string",
+    "bio": "##string",
+    "image": "#string",
+    "following": '#boolean'
+}
+}
+"""
+match failed: EACH_EQUALS
+  $ | actual is not an array or list (STRING:MAP)
+  '#notpresent'
+  {"slug":"#string","title":"#string","description":"#string","body":"#string","tagList":"#array","createdAt":"#? timeValidator(_)","updatedAt":"#? timeValidator(_)","favorited":"#boolean","favoritesCount":"#number","author":{"username":"#string","bio":"##string","image":"#string","following":"#boolean"}}
+
+classpath:conduitApp/feature/HomePage.feature:25
+12:38:43.292 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
+12:42:22.179 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:42:22.186 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1684912342185
+12:42:22.199 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:42:23.400 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:42:23.412 [pool-1-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+12:42:23.952 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate8108@karate.com","password":"karate12"}}
+
+12:42:24.888 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 934
+1 < 200
+1 < Date: Wed, 24 May 2023 07:12:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-7LvwZNOqeMUdRMIf7l+pvsBWjlE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=YsORqPVTW6X3QyHaPHoWrK9Ps5k2xJwFH3zR8fnwZg7%2BIY0p7f5P9SmA2IzJX4ll3fgFzs2pT5lineQB33YEBqtkPVeDLXjp2saV1inNIZmaT0Ui1tODi1FpwEh6sG%2BEp7ZV"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3bae979723612-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMjM0NCwiZXhwIjoxNjkwMDk2MzQ0fQ.niu-n6f-Xv_7GWnAv_VnLIeCgP5fsl9cH3k_SRZ6DRg"}}
+
+12:42:24.895 [pool-1-thread-2] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+12:42:24.907 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:42:24.917 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMjM0NCwiZXhwIjoxNjkwMDk2MzQ0fQ.niu-n6f-Xv_7GWnAv_VnLIeCgP5fsl9cH3k_SRZ6DRg
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:42:24.933 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NDkxMjM0NCwiZXhwIjoxNjkwMDk2MzQ0fQ.niu-n6f-Xv_7GWnAv_VnLIeCgP5fsl9cH3k_SRZ6DRg
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:42:25.865 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 948
+1 < 200
+1 < Date: Wed, 24 May 2023 07:12:25 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-tkjaEDbfn0oRIptGvmkCpxtiAT8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KEBcY9GF7YaYaV9e5HaoQOvp9RVBFS5DNWY6hRf6zEZWzIm48ho5zqtA49QGP31e3DsHboaN%2Fj%2BJtaefUx%2FOqSY4DAtF%2BUe34yLbylwS5%2FdxJbTNkoe9%2Bczm1n%2B03YbBp7Ez"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3baedce619be6-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","cupiditate","quia","deserunt"]}
+
+12:42:26.040 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1107
+1 < 200
+1 < Date: Wed, 24 May 2023 07:12:25 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"df8-T783/SJxFpT83QJyovfUlcUg6uc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=m2mhx%2BTLlc1%2BXl8bAdlL0UwLeaCpFiRXykYzy%2F1Fm5bZaslsto0RWfqPdvagCztf0evsIgX3FiJ7fkpr4OkMa9kdSI25C3hqo%2BeeK%2FoFMgjIKCs5E0KOhcwvUn8dwez93ako"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7cc3baedfcea2bf7-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Updated-title-one1-179370","title":"Updated title one1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-23T07:11:37.358Z","updatedAt":"2023-05-23T07:11:37.358Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four11-179370","title":"Updated title Four11","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:40.956Z","updatedAt":"2023-05-18T05:53:40.956Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four1-179370","title":"Updated title Four1","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:53:13.767Z","updatedAt":"2023-05-18T05:53:13.767Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Four-179370","title":"Updated title Four","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:52:10.512Z","updatedAt":"2023-05-18T05:52:10.512Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Three-179370","title":"Updated title Three","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:52.793Z","updatedAt":"2023-05-18T05:45:52.793Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-Two-179370","title":"Updated title Two","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-18T05:45:22.878Z","updatedAt":"2023-05-18T05:45:22.878Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Updated-title-179370","title":"Updated title","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:20:33.502Z","updatedAt":"2023-05-17T11:20:33.502Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"NewCheck-179370","title":"NewCheck","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T11:10:04.196Z","updatedAt":"2023-05-17T11:10:04.196Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"New-179370","title":"New","description":"Article","body":"Hello There","tagList":[],"createdAt":"2023-05-17T09:43:12.450Z","updatedAt":"2023-05-17T09:43:12.450Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Check-179370","title":"Check","description":"wqwq","body":"qwqwqw","tagList":[],"createdAt":"2023-05-17T09:37:33.348Z","updatedAt":"2023-05-17T09:37:33.348Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":207}
+
+12:42:27.015 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:conduitApp/feature/HomePage.feature
