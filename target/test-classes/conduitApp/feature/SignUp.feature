@@ -2,12 +2,12 @@
 Feature:Sign up new user
 
 Background: Prconditions
-    * def dataGenerator = Java.type('helper.DataGenerator')
     Given url apiURL
-
-Scenario: Sign up
+    * def dataGenerator = Java.type('helper.DataGenerator')
     * def randomEmail = dataGenerator.getRandomEmail()
     * def randomUsername = dataGenerator.getRandomUserName()
+
+Scenario: Sign up
     When path 'users'
     And request 
     """
@@ -34,8 +34,6 @@ Scenario: Sign up
 
 @dataGen
 Scenario Outline: Negative scenario for invalid username   
-    * def randomEmail = dataGenerator.getRandomEmail()
-    * def randomUsername = dataGenerator.getRandomUserName()
     When path 'users'
     And request 
     """

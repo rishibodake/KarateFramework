@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"conduitApp\/feature\/Article[1:15]","start":1684924762877,"end":1684924766397,"title":"conduitApp\/feature\/Article[1:15] 16:09:22.877-16:09:26.397 Create a new article"},{"id":2,"group":2,"content":"conduitApp\/feature\/Article[2:23]","start":1684924762879,"end":1684924767418,"title":"conduitApp\/feature\/Article[2:23] 16:09:22.879-16:09:27.418 Create and delete an article","className":"failed"},{"id":3,"group":3,"content":"conduitApp\/feature\/HomePage[1:5]","start":1684924762879,"end":1684924765799,"title":"conduitApp\/feature\/HomePage[1:5] 16:09:22.879-16:09:25.799 Get all tags"},{"id":4,"group":4,"content":"conduitApp\/feature\/HomePage[2:16]","start":1684924762877,"end":1684924765962,"title":"conduitApp\/feature\/HomePage[2:16] 16:09:22.877-16:09:25.962 Get first 10 articles on homepage"},{"id":5,"group":5,"content":"conduitApp\/feature\/SignUp[1:10]","start":1684924762877,"end":1684924765669,"title":"conduitApp\/feature\/SignUp[1:10] 16:09:22.877-16:09:25.669 Sign up"},{"id":6,"group":5,"content":"conduitApp\/feature\/SignUp[2.1:54]","start":1684924765674,"end":1684924766283,"title":"conduitApp\/feature\/SignUp[2.1:54] 16:09:25.674-16:09:26.283 Negative scenario for invalid username"},{"id":7,"group":3,"content":"conduitApp\/feature\/SignUp[2.2:55]","start":1684924765808,"end":1684924766431,"title":"conduitApp\/feature\/SignUp[2.2:55] 16:09:25.808-16:09:26.431 Negative scenario for invalid username"},{"id":8,"group":4,"content":"conduitApp\/feature\/SignUp[2.3:56]","start":1684924765969,"end":1684924766591,"title":"conduitApp\/feature\/SignUp[2.3:56] 16:09:25.969-16:09:26.591 Negative scenario for invalid username"},{"id":9,"group":5,"content":"conduitApp\/feature\/SignUp[2.4:57]","start":1684924766287,"end":1684924766893,"title":"conduitApp\/feature\/SignUp[2.4:57] 16:09:26.287-16:09:26.893 Negative scenario for invalid username"},{"id":10,"group":1,"content":"conduitApp\/feature\/SignUp[2.5:58]","start":1684924766403,"end":1684924767037,"title":"conduitApp\/feature\/SignUp[2.5:58] 16:09:26.403-16:09:27.037 Negative scenario for invalid username"},{"id":11,"group":3,"content":"conduitApp\/feature\/SignUp[2.6:59]","start":1684924766438,"end":1684924767085,"title":"conduitApp\/feature\/SignUp[2.6:59] 16:09:26.438-16:09:27.085 Negative scenario for invalid username"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

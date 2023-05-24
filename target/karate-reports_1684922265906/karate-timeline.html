@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"conduitApp\/feature\/HomePage[1:5]","start":1684921954817,"end":1684921957605,"title":"conduitApp\/feature\/HomePage[1:5] 15:22:34.817-15:22:37.605 Get all tags"},{"id":2,"group":2,"content":"conduitApp\/feature\/HomePage[2:16]","start":1684921954818,"end":1684921957779,"title":"conduitApp\/feature\/HomePage[2:16] 15:22:34.818-15:22:37.779 Get first 10 articles on homepage"},{"id":3,"group":3,"content":"conduitApp\/feature\/SignUp[1:10]","start":1684921954817,"end":1684921957565,"title":"conduitApp\/feature\/SignUp[1:10] 15:22:34.817-15:22:37.565 Sign up"},{"id":4,"group":4,"content":"conduitApp\/feature\/SignUp[2.1:54]","start":1684921954817,"end":1684921957564,"title":"conduitApp\/feature\/SignUp[2.1:54] 15:22:34.817-15:22:37.564 Negative scenario for invalid username"},{"id":5,"group":5,"content":"conduitApp\/feature\/SignUp[2.2:55]","start":1684921954817,"end":1684921957564,"title":"conduitApp\/feature\/SignUp[2.2:55] 15:22:34.817-15:22:37.564 Negative scenario for invalid username"},{"id":6,"group":5,"content":"conduitApp\/feature\/SignUp[2.3:56]","start":1684921957573,"end":1684921958255,"title":"conduitApp\/feature\/SignUp[2.3:56] 15:22:37.573-15:22:38.255 Negative scenario for invalid username"},{"id":7,"group":3,"content":"conduitApp\/feature\/SignUp[2.4:57]","start":1684921957573,"end":1684921958261,"title":"conduitApp\/feature\/SignUp[2.4:57] 15:22:37.573-15:22:38.261 Negative scenario for invalid username"},{"id":8,"group":4,"content":"conduitApp\/feature\/SignUp[2.5:58]","start":1684921957573,"end":1684921958251,"title":"conduitApp\/feature\/SignUp[2.5:58] 15:22:37.573-15:22:38.251 Negative scenario for invalid username"},{"id":9,"group":1,"content":"conduitApp\/feature\/SignUp[2.6:59]","start":1684921957613,"end":1684921958262,"title":"conduitApp\/feature\/SignUp[2.6:59] 15:22:37.613-15:22:38.262 Negative scenario for invalid username"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
