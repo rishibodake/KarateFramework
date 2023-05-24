@@ -8,8 +8,8 @@ Feature: Articles
         * set articleRequestBody.article.description = dataGenerator.getRandomArticleValue().description
         * set articleRequestBody.article.body = dataGenerator.getRandomArticleValue().body
 
-         * def tokenResponse = callonce read('classpath:helper/CreateToken.feature')
-         * def token = tokenResponse.authToken             
+        #  * def tokenResponse = callonce read('classpath:helper/CreateToken.feature')
+        #  * def token = tokenResponse.authToken             
     
    
     Scenario: Create a new article
