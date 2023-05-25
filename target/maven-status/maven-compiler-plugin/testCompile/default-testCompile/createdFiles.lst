@@ -1,3 +1,4 @@
+helper\DbHandler.class
 conduitApp\ConduitTest.class
 conduitApp\users\UsersRunner.class
 helper\DataGenerator.class

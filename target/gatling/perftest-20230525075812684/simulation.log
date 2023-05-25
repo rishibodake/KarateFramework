@@ -1,0 +1,6 @@
+RUN	performance.PerfTest	perftest	1685001492684	 	3.7.4
+USER	create and delete article	START	1685001492802
+REQUEST		POST /api/users/login	1685001495299	1685001496289	OK	 
+REQUEST		POST /api/articles	1685001496733	1685001497349	OK	 
+REQUEST		DELETE /api/articles/renato.yost-179370	1685001497365	1685001497950	OK	 
+USER	create and delete article	END	1685001497957
