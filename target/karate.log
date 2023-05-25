@@ -1,15 +1,17 @@
-13:28:10.930 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
-13:28:11.596 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-13:28:12.749 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
-13:28:12.749 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
-13:28:12.764 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
-13:28:12.766 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
-13:28:12.812 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Scenario create and delete article has finished injecting
-13:28:12.812 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Injecting is done
-13:28:13.785 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-13:28:15.059 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was: null 
-13:28:15.069 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
-13:28:15.297 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+13:33:36.678 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+13:33:37.274 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+13:33:38.284 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+13:33:38.285 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+13:33:38.299 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+13:33:38.304 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+13:33:38.399 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - Scenario create and delete article has finished injecting
+13:33:38.400 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - Injecting is done
+13:33:39.504 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:33:39.516 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:33:39.530 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:33:41.041 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:41.054 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helper/CreateToken.feature
+13:33:41.355 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
 1 > POST https://api.realworld.io/api/users/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 64
@@ -19,66 +21,144 @@
 1 > Accept-Encoding: gzip,deflate
 {"user":{"email":"karate8108@karate.com","password":"karate12"}}
 
-13:28:16.291 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 990
+13:33:42.192 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 832
 1 < 200
-1 < Date: Thu, 25 May 2023 07:58:16 GMT
+1 < Date: Thu, 25 May 2023 08:03:42 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"15f-2zph/fxrg8xWZuBT8RIT9D+zdM8"
+1 < Etag: W/"15f-ylUuxpc91sbvH9llezANEoS0tR8"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=AVlvswBIm4t1U2t%2FfQtHd9EeLeAIhJL%2BCsRLNtgu%2FVqbifKR6hGq%2F%2B3GtidB2yo6DKHHH2t2yMRy35G%2BrgF%2FQgFy0EKAEGx%2B7YxhsyfifjvHiBnkU7s8JnE8%2B2pOoedU6OQA"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=81z1fw1J7xixyqBthQQD1FlBsQbxYnnOh1QEtltPkHDIiRpZaP0ZRW1fzjVXofRW0%2FVkMfi8Ao0h0jZiOkAf0jlJFBe%2FhuNG5RFkKvRvE7rk8PaNnAP9kye2GfP6hXPIQ9%2Bo"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 7ccc3b755c9b3a3d-FRA
+1 < CF-RAY: 7ccc436a8c6b35f9-FRA
 1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTQ5NiwiZXhwIjoxNjkwMTg1NDk2fQ.fxewyRCgs6Dd6PVSIxw0i92eFhE41UsztBWBvK4GSeM"}}
+{"user":{"email":"karate8108@karate.com","username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTgyMiwiZXhwIjoxNjkwMTg1ODIyfQ.tslYVOrkJg288P9EzU0jpOJs08TkAahORqkDD32Azp0"}}
 
-13:28:16.303 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
-13:28:16.730 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+13:33:42.207 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helper/CreateToken.feature
+13:33:42.221 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:42.234 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:42.870 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
 1 > POST https://api.realworld.io/api/articles
-1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTQ5NiwiZXhwIjoxNjkwMTg1NDk2fQ.fxewyRCgs6Dd6PVSIxw0i92eFhE41UsztBWBvK4GSeM
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTgyMiwiZXhwIjoxNjkwMTg1ODIyfQ.tslYVOrkJg288P9EzU0jpOJs08TkAahORqkDD32Azp0
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 161
+1 > Content-Length: 174
 1 > Host: api.realworld.io
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
 1 > Accept-Encoding: gzip,deflate
-{"article":{"title":"renato.yost","description":"Bhorash","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[]}}
+{"article":{"title":"jennifer.turcotte","description":"Lorath","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[]}}
 
-13:28:17.349 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 616
+13:33:42.870 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTgyMiwiZXhwIjoxNjkwMTg1ODIyfQ.tslYVOrkJg288P9EzU0jpOJs08TkAahORqkDD32Azp0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 151
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"asa.kiehn","description":"Mantarys","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[]}}
+
+13:33:42.878 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTgyMiwiZXhwIjoxNjkwMTg1ODIyfQ.tslYVOrkJg288P9EzU0jpOJs08TkAahORqkDD32Azp0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"savanna.vandervort","description":"Mantarys","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[]}}
+
+13:33:43.477 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 601
 1 < 200
-1 < Date: Thu, 25 May 2023 07:58:17 GMT
+1 < Date: Thu, 25 May 2023 08:03:43 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"1ac-pqjNtEjjKcsYr7bHFulKsuyRN2A"
+1 < Etag: W/"1bf-fQYjM9Gr3low10LrJAnLUWED4WA"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1LA9vIRqh9b3UvgMEjahSHdbTGWTX6wuristm5pol5pDwtpTvCLv8zxcN%2Fp7FBjWQK0Il0fx%2FnYwjAtuw8ZA8TU6%2FPICgKZryk%2Bhxetlask8W1FTaaV2%2FL8JVjNxUGfn4hRK"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LPE4dTqPKLvqCQFo6Elp4PAovNJkOCfi1JMsKi%2B27%2FDeGLpmIceVpgpnldW8JgK4Ymyk%2Fo4aqXGUUDRp3Uh1Rigyzv1V1IaI9DL3z2cQVYbhckUdwHOp%2B534dUajk6eivv5Y"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 7ccc3b7cbcbf68f5-FRA
+1 < CF-RAY: 7ccc437309145c0e-FRA
 1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-{"article":{"slug":"renato.yost-179370","title":"renato.yost","description":"Bhorash","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-05-25T07:58:17.223Z","updatedAt":"2023-05-25T07:58:17.223Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+{"article":{"slug":"jennifer.turcotte-179370","title":"jennifer.turcotte","description":"Lorath","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2023-05-25T08:03:43.355Z","updatedAt":"2023-05-25T08:03:43.355Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
 
-13:28:17.364 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
-2 > DELETE https://api.realworld.io/api/articles/renato.yost-179370
-2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTQ5NiwiZXhwIjoxNjkwMTg1NDk2fQ.fxewyRCgs6Dd6PVSIxw0i92eFhE41UsztBWBvK4GSeM
+13:33:43.484 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 602
+1 < 200
+1 < Date: Thu, 25 May 2023 08:03:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1b2-QYYuKNPw/u5n5CHysrSG5ijSE1c"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=u1zhPXMj%2FKWV37g9vbsy7Pm1ph7mG78eis%2BYRSfKp2I4z1GIwpgx%2BXSHATTQ9ZTmilg03015Du3Z25Kbpyg%2BYpMsNZSCpnvmhzInFwFiK4Hs5OxX6PMbEEbBc%2FXmrXD42z29"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7ccc437319f82bc2-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"savanna.vandervort-179370","title":"savanna.vandervort","description":"Mantarys","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-05-25T08:03:43.363Z","updatedAt":"2023-05-25T08:03:43.363Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+13:33:43.496 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 618
+1 < 200
+1 < Date: Thu, 25 May 2023 08:03:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1a0-jYZAZvyGOUMaRJLDMsVl0gDhvEI"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=y4SrELeXmyfyiV7Pq8DC5Kt7w7ZI9aRmenQnFardTGGg%2FHCHFP2fJERInQwHakhEkT0H3Iw8D594Vz3RP8vRGhyzj3xKhvFwJa4h8zxZQlewew1Dfjfxz310f9tme7neRrf0"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7ccc43731a1f9174-FRA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"asa.kiehn-179370","title":"asa.kiehn","description":"Mantarys","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-05-25T08:03:43.370Z","updatedAt":"2023-05-25T08:03:43.370Z","favorited":false,"favoritesCount":0,"author":{"username":"karate8108","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+13:33:43.499 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+2 > DELETE https://api.realworld.io/api/articles/jennifer.turcotte-179370
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTgyMiwiZXhwIjoxNjkwMTg1ODIyfQ.tslYVOrkJg288P9EzU0jpOJs08TkAahORqkDD32Azp0
 2 > Host: api.realworld.io
 2 > Connection: Keep-Alive
 2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
 2 > Accept-Encoding: gzip,deflate
 
 
-13:28:17.952 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 585
+13:33:43.499 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
+2 > DELETE https://api.realworld.io/api/articles/savanna.vandervort-179370
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTgyMiwiZXhwIjoxNjkwMTg1ODIyfQ.tslYVOrkJg288P9EzU0jpOJs08TkAahORqkDD32Azp0
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:33:43.505 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+2 > DELETE https://api.realworld.io/api/articles/asa.kiehn-179370
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZTgxMDhAa2FyYXRlLmNvbSIsInVzZXJuYW1lIjoia2FyYXRlODEwOCIsImlhdCI6MTY4NTAwMTgyMiwiZXhwIjoxNjkwMTg1ODIyfQ.tslYVOrkJg288P9EzU0jpOJs08TkAahORqkDD32Azp0
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:33:44.096 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 592
 2 < 204
-2 < Date: Thu, 25 May 2023 07:58:17 GMT
+2 < Date: Thu, 25 May 2023 08:03:44 GMT
 2 < Content-Length: 0
 2 < Connection: keep-alive
 2 < X-Powered-By: Express
@@ -86,19 +166,53 @@
 2 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
 2 < Via: 1.1 vegur
 2 < CF-Cache-Status: DYNAMIC
-2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WBGH0bj6xqGUjEKGiWb8Yao0%2BTbwuiYb6ZoKe2SyENKkNXKIGB3wo09U1e7cckC5PEblkZhrBi4BVCS4%2BKa1SJoDPmTdxMEWjCxHADNo3jiXG9Trz5ZkffVhoWIrLc0fiKrK"}],"group":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FphWBNJENlhOEg9TMDQtRH8N%2F%2BjjCw%2F%2FCjCq%2FpeAbYgla8dhgzq9MmSHTXFu2dXsJR3MsPyGk50HaaEnEz4HsXBXTE5UAUqUrxOJcmKZt%2FtpPYq1tJTOZG%2FnGB%2BSEBwB1AsM"}],"group":"cf-nel","max_age":604800}
 2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 2 < Server: cloudflare
-2 < CF-RAY: 7ccc3b807f0b30c9-FRA
+2 < CF-RAY: 7ccc4376ecd4925c-FRA
 2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 
-13:28:17.959 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario create and delete article are stopped
-13:28:17.960 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
-13:28:17.962 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
-13:28:18.033 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
-13:28:18.081 [main] INFO  i.gatling.charts.stats.LogFileReader - Collected List(C:\Users\hbodake\Documents\karate-udemy\udemyproject\target\gatling\perftest-20230525075812684\simulation.log) from perftest-20230525075812684
-13:28:18.097 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
-13:28:18.106 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 6 lines
-13:28:18.118 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
-13:28:18.146 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 6 lines
+13:33:44.107 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 607
+2 < 204
+2 < Date: Thu, 25 May 2023 08:03:44 GMT
+2 < Content-Length: 0
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bH1QhymlS90T24b0OLjvtrUzUveWd3qZs8mQUv9YjEkbYevtCt1oUEM60jCwJ1PQ%2FfbbDjazDyi0sjLKdNOeBjAG2%2Btqz6iJ3TMUhI07N8QtT6t6g02AKWl5NmugercJ%2FnmU"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7ccc4376edff2c56-FRA
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+
+13:33:44.118 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 610
+2 < 204
+2 < Date: Thu, 25 May 2023 08:03:44 GMT
+2 < Content-Length: 0
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=22DvWxYKa%2BNCpUS5VvkBvBo0fjmpgtDQLQ4%2FhskavONc7dPYnmTjPoobm9XdsZWTcHpjxZygqdR1yH72NR3JtnYYskdecqeemDZb%2B7gk8bH%2F%2FGY92py6WFdmGuWxEjpWL911"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7ccc437708993764-FRA
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+
+13:33:44.123 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All users of scenario create and delete article are stopped
+13:33:44.125 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - Stopping
+13:33:44.127 [GatlingSystem-akka.actor.default-dispatcher-9] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+13:33:44.180 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+13:33:44.224 [main] INFO  i.gatling.charts.stats.LogFileReader - Collected List(C:\Users\hbodake\Documents\karate-udemy\udemyproject\target\gatling\perftest-20230525080338219\simulation.log) from perftest-20230525080338219
+13:33:44.243 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+13:33:44.251 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 14 lines
+13:33:44.264 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+13:33:44.296 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 14 lines
